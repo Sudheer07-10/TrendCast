@@ -1,0 +1,164 @@
+[debug] [2026-02-05T15:26:30.165Z] ----------------------------------------------------------------------
+[debug] [2026-02-05T15:26:30.173Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sudhe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-02-05T15:26:30.175Z] CLI Version:   15.5.1
+[debug] [2026-02-05T15:26:30.175Z] Platform:      win32
+[debug] [2026-02-05T15:26:30.175Z] Node Version:  v22.20.0
+[debug] [2026-02-05T15:26:30.176Z] Time:          Thu Feb 05 2026 20:56:30 GMT+0530 (India Standard Time)
+[debug] [2026-02-05T15:26:30.176Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sudhe\OneDrive\Desktop\Redesign Wireframe Request
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-05T15:28:10.416Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-05T15:28:10.418Z] > authorizing via signed-in user (nsudheer@gitam.in)
+[debug] [2026-02-05T15:28:10.421Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:10.421Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:10.424Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-02-05T15:28:11.373Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-02-05T15:28:11.373Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2026-02-05T15:28:14.899Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:14.899Z] Checked if tokens are valid: true, expires at: 1770308764658
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2026-02-05T15:28:14.901Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:14.902Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:14.902Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-05T15:28:14.902Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com  x-goog-user-project=stock-prediction-4f788
+[debug] [2026-02-05T15:28:14.905Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com [none]
+[debug] [2026-02-05T15:28:14.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com  x-goog-user-project=stock-prediction-4f788
+[debug] [2026-02-05T15:28:16.720Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-05T15:28:16.720Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2026-02-05T15:28:16.722Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:16.723Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:16.723Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2026-02-05T15:28:16.723Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com:enable  x-goog-user-project=stock-prediction-4f788
+[debug] [2026-02-05T15:28:16.739Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com 200
+[debug] [2026-02-05T15:28:16.740Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2026-02-05T15:28:16.741Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:16.741Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:16.742Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com:enable [none]
+[debug] [2026-02-05T15:28:16.742Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com:enable  x-goog-user-project=stock-prediction-4f788
+[debug] [2026-02-05T15:28:17.197Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2026-02-05T15:28:17.197Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2026-02-05T15:28:17.252Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com:enable 200
+[debug] [2026-02-05T15:28:17.252Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2026-02-05T15:28:27.267Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:27.267Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:27.268Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/-/services [none]
+[debug] [2026-02-05T15:28:29.606Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/-/services 200
+[debug] [2026-02-05T15:28:29.606Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/-/services {}
+[info] i  : ensuring required API cloudaicompanion.googleapis.com is enabled... 
+[debug] [2026-02-05T15:28:49.464Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:49.464Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:49.464Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com [none]
+[debug] [2026-02-05T15:28:49.464Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com  x-goog-user-project=stock-prediction-4f788
+[debug] [2026-02-05T15:28:51.226Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com 200
+[debug] [2026-02-05T15:28:51.226Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com [omitted]
+[warn] !  : missing required API cloudaicompanion.googleapis.com. Enabling now... 
+[debug] [2026-02-05T15:28:51.227Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:51.227Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:28:51.227Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com:enable [none]
+[debug] [2026-02-05T15:28:51.227Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com:enable  x-goog-user-project=stock-prediction-4f788
+[debug] [2026-02-05T15:28:51.839Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com:enable 200
+[debug] [2026-02-05T15:28:51.840Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/stock-prediction-4f788/services/cloudaicompanion.googleapis.com:enable [omitted]
+[debug] [2026-02-05T15:30:09.180Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:09.180Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:09.184Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/stock-prediction-4f788/billingInfo [none]
+[debug] [2026-02-05T15:30:11.094Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/stock-prediction-4f788/billingInfo 200
+[debug] [2026-02-05T15:30:11.094Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/stock-prediction-4f788/billingInfo {"name":"projects/stock-prediction-4f788/billingInfo","projectId":"stock-prediction-4f788","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-05T15:30:11.096Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:11.096Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:11.097Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/stock-prediction-4f788/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2026-02-05T15%3A30%3A11.095Z&interval.startTime=2026-01-29T15%3A30%3A11.095Z
+[debug] [2026-02-05T15:30:13.040Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/stock-prediction-4f788/timeSeries/ 200
+[debug] [2026-02-05T15:30:13.040Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/stock-prediction-4f788/timeSeries/ {"unit":"1"}
+[info] +  dataconnect: Detected existing apps . (web) 
+[debug] [2026-02-05T15:30:13.111Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:13.111Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:13.111Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services service_id=redesignwireframerequest
+[debug] [2026-02-05T15:30:13.111Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services {"name":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest"}
+[debug] [2026-02-05T15:30:16.374Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services 200
+[debug] [2026-02-05T15:30:16.374Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services {"name":"projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-02-05T15:30:15.459555489Z","target":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-02-05T15:30:16.376Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:16.376Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:16.377Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74 [none]
+[debug] [2026-02-05T15:30:16.821Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74 200
+[debug] [2026-02-05T15:30:16.821Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74 {"name":"projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-02-05T15:30:15.459555489Z","target":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-02-05T15:30:17.333Z] [LRO Poller] Retrying task index 0
+[debug] [2026-02-05T15:30:17.334Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:17.334Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:17.334Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74 [none]
+[debug] [2026-02-05T15:30:17.676Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74 200
+[debug] [2026-02-05T15:30:17.677Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74 {"name":"projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305413985-64a155958358b-d25fe38d-d6c97c74","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-02-05T15:30:15.459555489Z","endTime":"2026-02-05T15:30:16.577460706Z","target":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":true,"response":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.Service","name":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest","createTime":"2026-02-05T15:30:15.454325430Z","updateTime":"2026-02-05T15:30:15.454325430Z","uid":"5373f465-7331-475f-bbd4-cf149078ab2b","reconciling":false,"etag":"fRNi2YcPOhi_L-Zk67aua8rJTuk7n36c29mzVUphEE8"}}
+[debug] [2026-02-05T15:30:17.684Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:17.685Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:17.685Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask [none]
+[debug] [2026-02-05T15:30:17.685Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"A stock market prediction dashboard.","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-schema-generator"}}
+[debug] [2026-02-05T15:30:25.313Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask 200
+[debug] [2026-02-05T15:30:25.313Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"```graphql\ntype User @table {\n  username: String! @unique\n  passwordHash: String!\n  createdAt: Timestamp!\n  email: String\n}\n\ntype Stock @table {\n  tickerSymbol: String! @unique\n  companyName: String!\n  createdAt: Timestamp!\n  industry: String\n  sector: String\n}\n\ntype Prediction @table {\n  stock: Stock!\n  predictedPrice: Float!\n  predictionDate: Date!\n  validUntil: Date!\n  createdAt: Timestamp!\n  confidenceScore: Float\n}\n\ntype WatchlistItem @table(key: [\"user\", \"stock\"]) {\n  user: User!\n  stock: Stock!\n  addedAt: Timestamp!\n  notes: String\n}\n\ntype NewsArticle @table {\n  stock: Stock!\n  title: String!\n  url: String!\n  publishedAt: Timestamp!\n  summary: String\n  sentimentScore: Float\n}\n```\n"}]},"displayContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatDisplayContext","firebaseFdcDisplayContext":{"schemaSyntaxError":""}}}}
+[debug] [2026-02-05T15:30:25.318Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:25.318Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:25.319Z] >>> [apiv2][query] PATCH https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main allowMissing=true&validateOnly=false
+[debug] [2026-02-05T15:30:25.319Z] >>> [apiv2][body] PATCH https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main {"name":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main","datasources":[{"postgresql":{}}],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  username: String! @unique\n  passwordHash: String!\n  createdAt: Timestamp!\n  email: String\n}\n\ntype Stock @table {\n  tickerSymbol: String! @unique\n  companyName: String!\n  createdAt: Timestamp!\n  industry: String\n  sector: String\n}\n\ntype Prediction @table {\n  stock: Stock!\n  predictedPrice: Float!\n  predictionDate: Date!\n  validUntil: Date!\n  createdAt: Timestamp!\n  confidenceScore: Float\n}\n\ntype WatchlistItem @table(key: [\"user\", \"stock\"]) {\n  user: User!\n  stock: Stock!\n  addedAt: Timestamp!\n  notes: String\n}\n\ntype NewsArticle @table {\n  stock: Stock!\n  title: String!\n  url: String!\n  publishedAt: Timestamp!\n  summary: String\n  sentimentScore: Float\n}"}]}}
+[debug] [2026-02-05T15:30:27.152Z] <<< [apiv2][status] PATCH https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main 200
+[debug] [2026-02-05T15:30:27.152Z] <<< [apiv2][body] PATCH https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main {"name":"projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305426145-64a155a11bfa5-a8e6da87-bd57da7a","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-02-05T15:30:26.222840401Z","target":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main","verb":"update","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-02-05T15:30:27.152Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:27.153Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:27.153Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305426145-64a155a11bfa5-a8e6da87-bd57da7a [none]
+[debug] [2026-02-05T15:30:27.518Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305426145-64a155a11bfa5-a8e6da87-bd57da7a 200
+[debug] [2026-02-05T15:30:27.518Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305426145-64a155a11bfa5-a8e6da87-bd57da7a {"name":"projects/stock-prediction-4f788/locations/us-east4/operations/operation-1770305426145-64a155a11bfa5-a8e6da87-bd57da7a","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-02-05T15:30:26.222840401Z","endTime":"2026-02-05T15:30:26.446068389Z","target":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest/schemas/main","verb":"update","requestedCancellation":false,"apiVersion":"v1"},"done":true}
+[debug] [2026-02-05T15:30:27.521Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:27.521Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:27.522Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:27.522Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:30:27.522Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask [none]
+[debug] [2026-02-05T15:30:27.522Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"Create 4 operations for an app using the instance schema with proper authentication.","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-query-generator"},"clientContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatRequestContext","fdcInfo":{"fdcServiceName":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest","requiresQuery":true}}}}
+[debug] [2026-02-05T15:30:27.523Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask [none]
+[debug] [2026-02-05T15:30:27.523Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"Create a mutation to populate the database with some seed data.","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-query-generator"},"clientContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatRequestContext","fdcInfo":{"fdcServiceName":"projects/stock-prediction-4f788/locations/us-east4/services/redesignwireframerequest","requiresQuery":true}}}}
+[debug] [2026-02-05T15:30:30.976Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask 200
+[debug] [2026-02-05T15:30:30.976Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"```graphql\nmutation CreateUser($username: String!, $email: String!, $passwordHash: String!) @auth(level: PUBLIC, insecureReason: \"This operation is safe to expose to the public.\") {\n  user_insert(data: {username: $username, email: $email, passwordHash: $passwordHash, createdAt_expr: \"request.time\"})\n}\n\nquery GetStockByTicker($tickerSymbol: String!) @auth(level: PUBLIC, insecureReason: \"This operation is safe to expose to the public.\") {\n  stocks(where: {tickerSymbol: {eq: $tickerSymbol}}) {\n    id\n    companyName\n    tickerSymbol\n    industry\n    sector\n  }\n}\n\nmutation AddToWatchlist($stockId: UUID!, $notes: String) @auth(level: USER) {\n  watchlistItem_insert(data: {stockId: $stockId, userId_expr: \"auth.uid\", notes: $notes, addedAt_expr: \"request.time\"})\n}\n\nquery GetWatchlist @auth(level: USER) {\n  watchlistItems(where: {userId: {eq_expr: \"auth.uid\"}}) {\n    stock {\n      id\n      tickerSymbol\n      companyName\n    }\n    notes\n    addedAt\n  }\n}\n```","author":"model"}]},"outputDataContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.ChatOutputDataContext","relatedContent":{}}},"attributionContext":{"citationMetadata":{}}}
+[debug] [2026-02-05T15:30:31.965Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask 200
+[debug] [2026-02-05T15:30:31.965Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/stock-prediction-4f788/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"```graphql\nmutation CreateSeedData @transaction @auth(level: PUBLIC, insecureReason: \"This mutation is for seeding data and is safe to expose to the public.\") {\n  stock_insertMany(data: [\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440000\",\n      companyName: \"Example Company 1\",\n      tickerSymbol: \"EXMP1\",\n      createdAt: \"2024-01-01T00:00:00Z\",\n      industry: \"Technology\",\n      sector: \"Information Technology\"\n    },\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440001\",\n      companyName: \"Example Company 2\",\n      tickerSymbol: \"EXMP2\",\n      createdAt: \"2024-01-02T00:00:00Z\",\n      industry: \"Finance\",\n      sector: \"Financials\"\n    }\n  ])\n  user_insertMany(data: [\n    {\n      id: \"650e8400-e29b-41d4-a716-446655440000\",\n      username: \"demouser1\",\n      email: \"demouser1@example.com\",\n      passwordHash: \"hashed_password_1\",\n      createdAt: \"2024-01-01T00:00:00Z\"\n    },\n    {\n      id: \"650e8400-e29b-41d4-a716-446655440001\",\n      username: \"demouser2\",\n      email: \"demouser2@example.com\",\n      passwordHash: \"hashed_password_2\",\n      createdAt: \"2024-01-02T00:00:00Z\"\n    }\n  ])\n  watchlistItem_insertMany(data: [\n    {\n      userId: \"650e8400-e29b-41d4-a716-446655440000\",\n      stockId: \"550e8400-e29b-41d4-a716-446655440000\",\n      addedAt: \"2024-01-03T00:00:00Z\"\n    },\n    {\n      userId: \"650e8400-e29b-41d4-a716-446655440001\",\n      stockId: \"550e8400-e29b-41d4-a716-446655440001\",\n      addedAt: \"2024-01-04T00:00:00Z\"\n    }\n  ])\n}\n```\n","author":"model"}]},"outputDataContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.ChatOutputDataContext","relatedContent":{}}},"attributionContext":{"citationMetadata":{}}}
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\seed_data.gql 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] +  Wrote dataconnect\example\queries.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] i  dataconnect: Installing the generated SDKs ... 
+[info] i  dataconnect: downloading dataconnect-emulator-3.1.1.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-3.1.1.exe..."}}
+[debug] [2026-02-05T15:30:32.088Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.1.1 
+[debug] [2026-02-05T15:30:32.782Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.1.1 200
+[debug] [2026-02-05T15:30:32.782Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.1.1 [stream]
+[debug] [2026-02-05T15:30:42.706Z] defaultcredentials: writing to file C:\Users\sudhe\AppData\Roaming\firebase\nsudheer_gitam_in_application_default_credentials.json
+[info] +  dataconnect: Installed generated SDKs for . (web) 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] 
+=== Hosting Setup
+[debug] [2026-02-05T15:31:59.606Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:31:59.606Z] Checked if tokens are valid: true, expires at: 1770308764658
+[debug] [2026-02-05T15:31:59.606Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stock-prediction-4f788 [none]
+[debug] [2026-02-05T15:32:00.461Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stock-prediction-4f788 200
+[debug] [2026-02-05T15:32:00.461Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stock-prediction-4f788 {"projectId":"stock-prediction-4f788","projectNumber":"956763164900","displayName":"Stock Prediction","name":"projects/stock-prediction-4f788","resources":{"hostingSite":"stock-prediction-4f788"},"state":"ACTIVE","etag":"1_2e4cb861-89bc-492c-895a-8cc98499dd91"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

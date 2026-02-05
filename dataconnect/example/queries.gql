@@ -1,0 +1,29 @@
+mutation CreateUser($username: String!, $email: String!, $passwordHash: String!) @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public.") {
+  user_insert(data: {username: $username, email: $email, passwordHash: $passwordHash, createdAt_expr: "request.time"})
+}
+
+query GetStockByTicker($tickerSymbol: String!) @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public.") {
+  stocks(where: {tickerSymbol: {eq: $tickerSymbol}}) {
+    id
+    companyName
+    tickerSymbol
+    industry
+    sector
+  }
+}
+
+mutation AddToWatchlist($stockId: UUID!, $notes: String) @auth(level: USER) {
+  watchlistItem_insert(data: {stockId: $stockId, userId_expr: "auth.uid", notes: $notes, addedAt_expr: "request.time"})
+}
+
+query GetWatchlist @auth(level: USER) {
+  watchlistItems(where: {userId: {eq_expr: "auth.uid"}}) {
+    stock {
+      id
+      tickerSymbol
+      companyName
+    }
+    notes
+    addedAt
+  }
+}

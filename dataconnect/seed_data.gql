@@ -1,0 +1,48 @@
+mutation CreateSeedData @transaction @auth(level: PUBLIC, insecureReason: "This mutation is for seeding data and is safe to expose to the public.") {
+  stock_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      companyName: "Example Company 1",
+      tickerSymbol: "EXMP1",
+      createdAt: "2024-01-01T00:00:00Z",
+      industry: "Technology",
+      sector: "Information Technology"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      companyName: "Example Company 2",
+      tickerSymbol: "EXMP2",
+      createdAt: "2024-01-02T00:00:00Z",
+      industry: "Finance",
+      sector: "Financials"
+    }
+  ])
+  user_insertMany(data: [
+    {
+      id: "650e8400-e29b-41d4-a716-446655440000",
+      username: "demouser1",
+      email: "demouser1@example.com",
+      passwordHash: "hashed_password_1",
+      createdAt: "2024-01-01T00:00:00Z"
+    },
+    {
+      id: "650e8400-e29b-41d4-a716-446655440001",
+      username: "demouser2",
+      email: "demouser2@example.com",
+      passwordHash: "hashed_password_2",
+      createdAt: "2024-01-02T00:00:00Z"
+    }
+  ])
+  watchlistItem_insertMany(data: [
+    {
+      userId: "650e8400-e29b-41d4-a716-446655440000",
+      stockId: "550e8400-e29b-41d4-a716-446655440000",
+      addedAt: "2024-01-03T00:00:00Z"
+    },
+    {
+      userId: "650e8400-e29b-41d4-a716-446655440001",
+      stockId: "550e8400-e29b-41d4-a716-446655440001",
+      addedAt: "2024-01-04T00:00:00Z"
+    }
+  ])
+}
